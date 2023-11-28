@@ -1,0 +1,371 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, div, img, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.color-text{
+    color: #ed563b;
+}
+.base-color{
+    color: white;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.para-color{
+    color:#7a7a7a;
+}
+
+.flex-display{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.nav-bar-list-items :hover, .class-section li :hover, .schedule-list li:hover{
+    color: #ed563b;
+}
+
+
+/* HEADER & NAV SECTION */
+.nav-bar{
+    gap: 50px;
+}
+
+.header-area {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    height: 80px;
+    padding: 15px;
+
+}
+.nav-bar-logo{
+    font-size: 34px;
+}
+.nav-bar-list-items{
+    list-style-type: none;
+    justify-content:baseline;
+    gap: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+
+
+}
+.nav-bar-list-items:nth-child(6), a {
+  background-color: #ed563b;
+  padding: 15px;
+
+}
+
+.nav-bar-list-items li:nth-child(6):hover a {
+    color: black;
+}
+  
+.header-section, .think-header-container {
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    transform: translate(0%, -45%);
+    right: 0;
+    left: 0;
+    color: white;
+}
+
+.hero-section {
+    position: relative;
+}
+.video-bg{
+    position: absolute;
+    background-color: rgba(35,45,57,0.8);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.hero-video-section{
+    min-width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+.header-section h1{
+    font-size: 54px;
+    margin: 25px 0 45px 0;
+}
+.header-section a, .think-section a, .class-section a{
+    background-color: #ed563b;
+    padding: 15px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* CHOOSE SECTION */
+.program-header-container{
+    text-align: center;
+}
+.program-header-container h3{
+ font-size:28px ;
+}
+.program-header-container p{
+    font-size:14px ;
+    max-width: 540px;
+    margin: 0 auto;
+   padding-top: 20px;
+}
+.program-header-container img{
+    margin: 20px 0 15px 0;
+}
+.program-sections{
+ margin-top: 35px;
+ padding: 15px;
+}
+
+.program-ul{
+    max-width: 520px;
+    text-decoration-line: none;
+}
+.program-li{
+ align-items: self-start;
+ gap: 15px;
+ margin-bottom: 15px;
+}
+.program-li{
+   font-size: 13px;
+}
+.program-discover{
+    font-size: 11px;
+    color: #ed563b;
+    margin-top: 5px;
+}
+.program-sub-heading{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+
+/* THINK SECTION */
+.think-section {
+    position: relative;
+    margin-top: 25PX;
+}
+.think-section img{
+ width: 100%;
+ height: 400px;
+ object-fit: cover;
+ position: relative;
+}
+.think-header-container{
+    max-width: 920px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+.think-header-container h3{
+    font-size: 32px;
+}
+.think-header-container p{
+    margin: 15px 0 20px 0; 
+}
+
+/* CLASSES SECTION */
+.class-section{
+ margin-top: 50px;
+ gap: 50px;
+ overflow: hidden;
+ padding: 10px;
+ align-items: start;
+}
+.class-section ul{
+  max-width: 370px;
+}
+.class-section li p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+.class-section li{
+    gap: 16px;
+    margin-bottom: 70px;
+    text-decoration-line:none;
+    justify-content: center;
+}
+.class-section ul li:last-child{
+background-color: #ed563b;
+padding: 15px;
+list-style-type: none;
+text-align: center;
+color: white;
+}
+
+.class-section ul li:nth-child(4){
+    margin-bottom: 100px;
+}
+
+
+.class-img{
+ max-width: 600px;
+ margin-bottom: 25px;
+}
+.class-section-2 h3{
+    font-size: 22px;
+}
+
+.class-section-2 p{
+    font-size: 18px;
+    margin: 15px 0 20px 0;
+    max-width: 600px;
+    object-fit: cover;
+}
+
+
+/*SCHEDULE SECTION*/
+.schedule-section{
+    background-image: url(/images/schedule-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+.schedule-list{
+    text-align: center;
+}
+.schedule-list li{
+    list-style-type: none;
+    color: white;
+    margin-top: 50px;
+    display: inline-block;
+}
+.schedule-list li span{ 
+padding:0 10px 0 10px;
+}
+.schedule-table, table{
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse:collapse;
+    border: 1px solid white;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+.schedule-table th, td{
+    border: 1px solid white;
+}
+.schedule-table td{
+    width: 180px;
+    height: 80px;
+}
+
+
+/* Expert section */
+.expert-trainer-container{
+    justify-content: space-evenly;
+    margin-top: 60px;
+    padding-bottom: 50px;
+    padding: 20px;
+}
+.trainer-container{
+    max-width: 280px;
+}
+.trainer-container img{
+    width: 100%;
+    height: 100%;
+}
+.trainer-container :nth-child(2){
+   font-size: 14px;
+   padding-top: 10px;
+   font-weight: 400;
+}
+.trainer-container, h6{
+    font-size: 18px;
+    padding: 15px 0 10px 0;
+}
+
+
+/* FOOTER SECTION */
+footer{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0 100px 0;
+}
+
+
+/* media query */
+
+@media (max-width:980px) {
+    .nav-bar{
+        display: block;
+    }
+    .nav-bar-list-items{
+        margin-top: 15px;
+    }
+    .program-sections, .class-section{
+    display: block;}
+
+    .program-ul, .class-section-1{
+        margin: 0 auto;
+    
+    }
+
+    .class-img {
+        margin: 0 auto;
+
+    }
+    .class-section-2, .class-img{
+ 
+        margin: 0 auto;
+        max-width: 360px;
+    }
+
+    .expert-trainer-container{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .trainer-container{
+        max-width: 600px; 
+        margin-top: 40px;
+    }
+    
+}
+@media (max-width:678px) {
+
+    .nav-bar-list-items{
+        display: none;
+    }
+    .nav-bar-logo{
+        font-size: 24px;
+    }
+    .header-section h1{
+        font-size: 42px;
+    }
+    .schedule-table td{
+        width: 160px;
+        height: 60px;
+        font-size: 12px;
+    }
+}
